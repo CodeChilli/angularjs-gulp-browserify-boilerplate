@@ -130,8 +130,12 @@ function ExampleCtrl($scope, $http) {
     this.label = lab;
     this.value = val;
     this.show = isShow;
-    this.sign=(val<0)?'-':'+';
 
+
+    this.updateSign=function(){
+      this.sign=(this.value<0)?'-':'+';
+    }
+    this.updateSign();
 
     this.getId = function () {
       return this.id;
@@ -216,6 +220,7 @@ function ExampleCtrl($scope, $http) {
   function updateButtonStates(button, show, value) {
     button.show = show;
     button.value = value;
+    button.updateSign(value);
   }
 
   $http.get($scope.url).then(successCallback, errorCallback);
