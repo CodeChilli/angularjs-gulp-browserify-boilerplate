@@ -181,6 +181,9 @@ function ExampleCtrl($scope, $http) {
     resetAllAndAddClassAt('active',id);
   }
 
+  $scope.animateSelectedProgressBar = function(){
+    resetAllAndAnimateOnlyAt($scope.selectedProgressBar);
+  }
 
   $scope.makeDangerAtElemPrefixId =function(id){
     resetAllAndAddClassAt('btn-danger',id);
@@ -223,14 +226,16 @@ function ExampleCtrl($scope, $http) {
     button.updateSign(value);
   }
 
+
+
   $http.get($scope.url).then(successCallback, errorCallback);
 
   function successCallback(response) {
 
     function updateButtonsAndProgressBars(bars, buttons, limit) {
-     /* console.log('bars' + bars);
-      console.log('buttons' + buttons);
-      console.log('limit' + limit);*/
+      bars.sort(function(a,b){return a - b}) ;
+      buttons.sort(function(a,b){return a - b});
+
 
       function updateButtonsFromResponse() {
         for (var i = 0; i < $scope.buttons.length; i++) {

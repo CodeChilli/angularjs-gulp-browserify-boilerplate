@@ -15,7 +15,7 @@
                    aria-valuenow="{{progressBar.value}}" aria-valuemin="0" aria-valuemax="100"
                    style="width:{{progressBar['uIValueInPercentage']}}%">
 
-                <span class="sr-only">{{progressBar['uIValueInPercentage']}}</span>
+                <span >{{progressBar['uIValueInPercentage']}}%</span>
 
               </div>
 
@@ -26,25 +26,21 @@
           </div>
         </div>
         <div class="row">
-
-
           <div class="col-xs-6 col-centered" align="right">
             <div class="btn-group dropup">
               <form class="form" name="form" novalidate>
-
-                <select ng-model="selectedProgressBar"  >
-                  <option
-                    ng-selected="pb.selected"
+                <select ng-model="selectedProgressBar" title="click to select target"  >
+                  <option  ng-selected="true" ngchange="animateSelectedProgressBar()"
                     ng-repeat="pb in progressBarsThatShow track by $index" value="{{pb.id}}"
                           data-title="pb.id">#progress{{pb.id}}</option>
                 </select>
               </form>
-
             </div>
           </div>
+
           <div class="col-xs-6 col-centered" >
             <span ng-repeat="button in buttons">
-            <button ng-show="button['show']" type="button" class="btnPB"
+            <button ng-show="button['show']" type="button" class="btnPB" title="click to update progression"
                     ng-click="updateProgressBar(selectedProgressBar, button['id']-1)">{{button['sign']}}{{button['value']}}</button>
             </span>
         </div>

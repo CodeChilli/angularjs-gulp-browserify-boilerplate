@@ -6,12 +6,11 @@ function ExampleDirective() {
     link: (scope) => {
       scope.updateProgressBar = function (pbar, btnIndexNo) {
         const value = scope.buttons[btnIndexNo].getValue();
-
         const progressBar = scope.progressBars[scope.selectedProgressBar-1];
-
         progressBar.incrementOrDecrementBy(value);
         scope.resetAllAndAnimateOnlyAt(scope.selectedProgressBar);
       };
+
     }
 
   };
