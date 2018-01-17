@@ -1,6 +1,6 @@
 describe('Unit: ExampleService', function() {
 
-  let http, service;
+  var service;
 
   beforeEach(function() {
     // instantiate the app module
@@ -8,7 +8,7 @@ describe('Unit: ExampleService', function() {
 
     // mock the service
     angular.mock.inject(($httpBackend, ExampleService) => {
-      http = $httpBackend;
+      //http = $httpBackend;
       service = ExampleService;
     });
   });
@@ -17,15 +17,5 @@ describe('Unit: ExampleService', function() {
     expect(service).toBeDefined();
   });
 
-  it('should retrieve data', function(done) {
-    http.expect('GET', 'apiPath').respond(201, {data: 1234});
 
-    service.get().then((result) => {
-      expect(result).toEqual({data: 1234});
-    }).catch((error) => {
-      expect(error).toBeUndefined();
-    }).then(done);
-
-    http.flush();
-  });
 });

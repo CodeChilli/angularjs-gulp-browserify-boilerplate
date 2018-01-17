@@ -1,0 +1,792 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for C:\Users\priya.PRIYA-THINKPAD\Documents\progressBarDemo\app\js\controllers\example.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../../../../../../prettify.css" />
+    <link rel="stylesheet" href="../../../../../../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../../../../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../../../../../../index.html">all files</a> / <a href="index.html">C:/Users/priya.PRIYA-THINKPAD/Documents/progressBarDemo/app/js/controllers/</a> example.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">54.61% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>77/141</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">16.67% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>2/12</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">14.29% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>4/28</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">39.42% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>41/104</span>
+      </div>
+      <div class='fl pad1y'>
+        <span class="strong">8 statements, 2 branches</span>
+        <span class="quiet">Ignored</span>  &nbsp;&nbsp;&nbsp;&nbsp;
+      </div>
+    </div>
+  </div>
+  <div class='status-line medium'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201
+202
+203
+204
+205
+206
+207
+208
+209
+210
+211
+212
+213
+214
+215
+216
+217
+218
+219
+220
+221
+222
+223
+224
+225
+226
+227
+228
+229
+230
+231
+232
+233
+234
+235
+236
+237
+238
+239
+240
+241
+242</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7×</span>
+<span class="cline-any cline-yes">7×</span>
+<span class="cline-any cline-yes">7×</span>
+<span class="cline-any cline-yes">7×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">35×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">35×</span>
+<span class="cline-any cline-yes">35×</span>
+<span class="cline-any cline-yes">35×</span>
+<span class="cline-any cline-yes">35×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">35×</span>
+<span class="cline-any cline-yes">35×</span>
+<span class="cline-any cline-yes">35×</span>
+<span class="cline-any cline-yes">35×</span>
+<span class="cline-any cline-yes">35×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">35×</span>
+<span class="cline-any cline-yes">35×</span>
+<span class="cline-any cline-yes">35×</span>
+<span class="cline-any cline-yes">35×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7×</span>
+<span class="cline-any cline-yes">7×</span>
+<span class="cline-any cline-yes">7×</span>
+<span class="cline-any cline-yes">7×</span>
+<span class="cline-any cline-yes">7×</span>
+<span class="cline-any cline-yes">7×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7×</span>
+<span class="cline-any cline-yes">7×</span>
+<span class="cline-any cline-yes">7×</span>
+<span class="cline-any cline-yes">7×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7×</span>
+<span class="cline-any cline-yes">7×</span>
+<span class="cline-any cline-yes">7×</span>
+<span class="cline-any cline-yes">7×</span>
+<span class="cline-any cline-yes">7×</span>
+<span class="cline-any cline-yes">7×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">/* eslint-disable no-unused-vars */
+function ExampleCtrl($scope, $http) {
+  'ngInject'
+&nbsp;
+  $scope.title = 'Progress Bars Demo';
+  $scope.url = 'http://pb-api.herokuapp.com/bars';
+  $scope.selectedProgressBar = 1;
+  $scope.progressBarsThatShow = [];
+&nbsp;
+  function ProgressBar(id1, label1, value1, show1, limit1, valueInPercentage1, overlimit1,selected) {
+    this.oldProgressBar = null;
+&nbsp;
+    this.id = id1;
+    this.label = label1;
+    this.overlimit = overlimit1;
+    this.value = value1;
+&nbsp;
+    this.show = show1;
+    this.limit = limit1;
+    this.valueInPercentage = valueInPercentage1;
+    this.uIValueInPercentage = valueInPercentage1;
+    this.selected=selected;
+&nbsp;
+    this.getId = <span class="fstat-no" title="function not covered" >function () {</span>
+<span class="cstat-no" title="statement not covered" >      return this.i</span>d;
+    };
+&nbsp;
+    this.getShow = <span class="fstat-no" title="function not covered" >function () {</span>
+<span class="cstat-no" title="statement not covered" >      return this.s</span>how;
+    };
+&nbsp;
+    this.getLabel = <span class="fstat-no" title="function not covered" >function () {</span>
+<span class="cstat-no" title="statement not covered" >      return this.l</span>abel;
+    };
+&nbsp;
+    this.getValue = <span class="fstat-no" title="function not covered" >function () {</span>
+<span class="cstat-no" title="statement not covered" >      return this.v</span>alue;
+    };
+&nbsp;
+    this.getLimit = <span class="fstat-no" title="function not covered" >function () {</span>
+<span class="cstat-no" title="statement not covered" >      return this.l</span>imit;
+    };
+&nbsp;
+    this.getValueInPercentage = <span class="fstat-no" title="function not covered" >function () {</span>
+<span class="cstat-no" title="statement not covered" >      return this.v</span>alueInPercentage;
+    };
+&nbsp;
+    this.getUIValueInPercentage = <span class="fstat-no" title="function not covered" >function () {</span>
+<span class="cstat-no" title="statement not covered" >      return this.u</span>IValueInPercentage;
+    };
+&nbsp;
+    this.getSelected= <span class="fstat-no" title="function not covered" >function () {</span>
+<span class="cstat-no" title="statement not covered" >      return this.s</span>elected;
+    };
+&nbsp;
+    this.toString = <span class="fstat-no" title="function not covered" >function () {</span>
+<span class="cstat-no" title="statement not covered" >      const s = '</span>,';
+<span class="cstat-no" title="statement not covered" >      return ' id:' + this['id'] + s + 'label:' + this['label'] + s + 'show:' + this['show'] + s + 'limit:' + this['limit'] + s + 'valueInPercentage:' + s + this['valueInPercentage'] + s + 'overlimit:' + this['overlimit'] + s + 'uIValueInPercentage:' + this['</span>uIValueInPercentage'];
+    };
+&nbsp;
+    this.incrementOrDecrementBy = <span class="fstat-no" title="function not covered" >function (signedValueInPercentage) {</span>
+&nbsp;
+      //Keep Track of Previous Changes
+<span class="cstat-no" title="statement not covered" >      this.oldProgressBar = new ProgressBar(this['id'], this['label'], this['value'], this['show'], this['limit'], this['valueInPercentage'], this['overlimit'],this['</span>selected']);
+<span class="cstat-no" title="statement not covered" >      this.oldProgressBar['uIValueInPercentage'] = this['</span>uIValueInPercentage'];
+&nbsp;
+&nbsp;
+<span class="cstat-no" title="statement not covered" >      var newValueInPercentage = signedValueInPercentage + this['</span>valueInPercentage'];
+&nbsp;
+<span class="cstat-no" title="statement not covered" >      console.log(n</span>ewValueInPercentage);
+&nbsp;
+<span class="fstat-no" title="function not covered" >      function constructZerTo100() {</span>
+<span class="cstat-no" title="statement not covered" >        this['uIValueInPercentage'] = n</span>ewValueInPercentage;
+<span class="cstat-no" title="statement not covered" >        this['valueInPercentage'] = n</span>ewValueInPercentage;
+<span class="cstat-no" title="statement not covered" >        this['value'] = this['</span>valueInPercentage']
+<span class="cstat-no" title="statement not covered" >        this['overlimit'] = f</span>alse;
+      }
+&nbsp;
+<span class="fstat-no" title="function not covered" >      function constructAboveLimit(percent) {</span>
+<span class="cstat-no" title="statement not covered" >        this['uIValueInPercentage'] = p</span>ercent;
+<span class="cstat-no" title="statement not covered" >        this['valueInPercentage'] = this['</span>limit']; //limit will never change
+<span class="cstat-no" title="statement not covered" >        this['value'] = this['</span>limit'];
+<span class="cstat-no" title="statement not covered" >        this['overlimit'] = t</span>rue;
+      }
+&nbsp;
+<span class="fstat-no" title="function not covered" >      function constructAbove100(percent) {</span>
+<span class="cstat-no" title="statement not covered" >        this['uIValueInPercentage'] = p</span>ercent;
+<span class="cstat-no" title="statement not covered" >        this['valueInPercentage'] = n</span>ewValueInPercentage;
+<span class="cstat-no" title="statement not covered" >        this['value'] = n</span>ewValueInPercentage;
+<span class="cstat-no" title="statement not covered" >        this['overlimit'] = t</span>rue;
+      }
+&nbsp;
+<span class="fstat-no" title="function not covered" >      function c</span>onstructNegative() {
+<span class="cstat-no" title="statement not covered" >        this['value'] = 0</span>;
+<span class="cstat-no" title="statement not covered" >        this['valueInPercentage'] = 0</span>;
+<span class="cstat-no" title="statement not covered" >        this['uIValueInPercentage'] = 0</span>;
+<span class="cstat-no" title="statement not covered" >        this['overlimit'] = true;//???</span>
+      }
+&nbsp;
+      if (newValueInPercentage &gt; 0) {
+<span class="cstat-no" title="statement not covered" >        const percent = 1</span>00;
+        if (newValueInPercentage &lt;= percent) {
+<span class="cstat-no" title="statement not covered" >          constructZerTo100.call(t</span>his);
+        } else if (newValueInPercentage &gt; this['limit']) {
+<span class="cstat-no" title="statement not covered" >          constructAboveLimit.call(this, p</span>ercent);
+        } else if (newValueInPercentage &gt; percent) {
+<span class="cstat-no" title="statement not covered" >          constructAbove100.call(this, p</span>ercent);
+        }
+      } else {
+<span class="cstat-no" title="statement not covered" >        constructNegative.call(t</span>his);
+      }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >      console.log('OLD:' + this.oldProgressBar.t</span>oString());
+<span class="cstat-no" title="statement not covered" >      console.log('NEW:' + this.t</span>oString());
+    }
+  };
+&nbsp;
+  function Button(id1, lab, val, isShow) {
+&nbsp;
+    this.id = id1;
+    this.label = lab;
+    this.value = val;
+    this.show = isShow;
+&nbsp;
+&nbsp;
+    this.getId = <span class="fstat-no" title="function not covered" >function () {</span>
+<span class="cstat-no" title="statement not covered" >      return this.i</span>d;
+    };
+&nbsp;
+    this.getShow = <span class="fstat-no" title="function not covered" >function () {</span>
+<span class="cstat-no" title="statement not covered" >      return this.s</span>how;
+    };
+&nbsp;
+    this.getLabel = <span class="fstat-no" title="function not covered" >function () {</span>
+<span class="cstat-no" title="statement not covered" >      return this.l</span>abel;
+    };
+&nbsp;
+    this.getValue = <span class="fstat-no" title="function not covered" >function () {</span>
+<span class="cstat-no" title="statement not covered" >      return this.v</span>alue;
+    };
+&nbsp;
+  }
+&nbsp;
+&nbsp;
+  function initialize() {
+    //4 to 6 buttons will be visible
+&nbsp;
+    $scope.buttons = [];
+    $scope.buttons.push(new Button('1', '0', 0, false));
+    $scope.buttons.push(new Button('2', '0', 0, false));
+    $scope.buttons.push(new Button('3', '0', 0, false));
+    $scope.buttons.push(new Button('4', '0', 0, false));
+    $scope.buttons.push(new Button('5', '0', 0, false));
+&nbsp;
+&nbsp;
+    var defaultoverlimit = false;
+&nbsp;
+    const valueInPercentage2 = 0;
+    const limit2 = 0;
+    const label2 = '0';
+    const value2 = 0;
+&nbsp;
+    //2 to 5 progressbars will be visible
+&nbsp;
+    $scope.progressBars = [];
+    $scope.progressBars.push(new ProgressBar('1', 0, value2, true, limit2, valueInPercentage2, defaultoverlimit,true));
+    $scope.progressBars.push(new ProgressBar('2', 1, value2, true, limit2, valueInPercentage2, defaultoverlimit,false));
+    $scope.progressBars.push(new ProgressBar('3', 2, value2, false, limit2, valueInPercentage2, defaultoverlimit,false));
+    $scope.progressBars.push(new ProgressBar('4', 3, value2, false, limit2, valueInPercentage2, defaultoverlimit,false));
+    $scope.progressBars.push(new ProgressBar('5', 4, value2, false, limit2, valueInPercentage2, defaultoverlimit,false));
+&nbsp;
+  }
+&nbsp;
+  initialize();
+&nbsp;
+<span class="fstat-no" title="function not covered" >  function updateButtonStates(button, show, value) {</span>
+<span class="cstat-no" title="statement not covered" >    button.show = s</span>how;
+<span class="cstat-no" title="statement not covered" >    button.value = v</span>alue;
+  }
+&nbsp;
+  $http.get($scope.url).then(successCallback, errorCallback);
+&nbsp;
+&nbsp;
+<span class="fstat-no" title="function not covered" >  function successCallback(response) {</span>
+&nbsp;
+<span class="fstat-no" title="function not covered" >    function updateButtonsAndProgressBars(bars, buttons, limit) {</span>
+<span class="cstat-no" title="statement not covered" >      console.log('bars' + b</span>ars);
+<span class="cstat-no" title="statement not covered" >      console.log('buttons' + b</span>uttons);
+<span class="cstat-no" title="statement not covered" >      console.log('limit' + l</span>imit);
+&nbsp;
+<span class="fstat-no" title="function not covered" >      function updateButtonsFromResponse() {</span>
+        for (var i = 0; i &lt; $scope.buttons.length; i++) {
+          if (i &lt; buttons.length) {
+<span class="cstat-no" title="statement not covered" >            updateButtonStates($scope.buttons[i], true, buttons[i</span>]);
+          } else {
+<span class="cstat-no" title="statement not covered" >            updateButtonStates($scope.buttons[i], false, 1</span>00);//check
+          }
+        }
+      }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >      u</span>pdateButtonsFromResponse();
+&nbsp;
+<span class="fstat-no" title="function not covered" >      function updateProgressBarsFromResponseData() {</span>
+        for (var i = 0; i &lt; $scope.progressBars.length; i++) {
+<span class="cstat-no" title="statement not covered" >          const b = i &lt; bars.l</span>ength;
+<span class="cstat-no" title="statement not covered" >          $scope.progressBars[i]['show'] = b</span>;
+          if (b) {
+<span class="cstat-no" title="statement not covered" >            $scope.progressBars[i]['uIValueInPercentage'] = bars[i</span>];
+<span class="cstat-no" title="statement not covered" >            $scope.progressBars[i]['value'] = bars[i</span>];
+<span class="cstat-no" title="statement not covered" >            $scope.progressBars[i]['valueInPercentage'] = bars[i</span>];
+<span class="cstat-no" title="statement not covered" >            $scope.progressBars[i]['limit'] = l</span>imit;
+&nbsp;
+<span class="cstat-no" title="statement not covered" >            $scope.progressBarsThatShow.push($scope.progressBars[i</span>]);
+<span class="cstat-no" title="statement not covered" >            $scope.selectedProgressBar = $scope.progressBars[0</span>];
+          } else {
+<span class="cstat-no" title="statement not covered" >            $scope.progressBars[i]['uIValueInPercentage'] = 0</span>;
+<span class="cstat-no" title="statement not covered" >            $scope.progressBars[i]['value'] = 0</span>;
+<span class="cstat-no" title="statement not covered" >            $scope.progressBars[i]['valueInPercentage'] = 0</span>;
+<span class="cstat-no" title="statement not covered" >            $scope.progressBars[i]['limit'] = 0</span>;
+          }
+        }
+      }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >      u</span>pdateProgressBarsFromResponseData();
+&nbsp;
+    }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    updateButtonsAndProgressBars(response.data.bars.sort(), response.data.buttons.sort(), response.data.l</span>imit);
+&nbsp;
+  }
+&nbsp;
+<span class="fstat-no" title="function not covered" >  function errorCallback(error) {</span>
+<span class="cstat-no" title="statement not covered" >    console.log(e</span>rror);
+  }
+}
+&nbsp;
+&nbsp;
+export default {
+  name: 'ExampleCtrl',
+  fn: ExampleCtrl
+};
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Wed Jan 17 2018 15:07:15 GMT+0800 (Malay Peninsula Standard Time)
+</div>
+</div>
+<script src="../../../../../../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../../../../../../sorter.js"></script>
+</body>
+</html>

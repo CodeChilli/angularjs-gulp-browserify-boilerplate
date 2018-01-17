@@ -1,43 +1,55 @@
 <div class="example-directive">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-xs-12">
-        <div class="progress">
-          <div class="progress-bar" ng-style="{width: pbWidth1}"></div>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-xs-12">
-        <div class="progress">
-          <div class="progress-bar" ng-style="{width: pbWidth2}"></div>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-xs-12">
-        <div class="progress">
-          <div class="progress-bar" ng-style="{width: pbWidth3}"></div>
-        </div>
-      </div>
-    </div>
+  <div class="panel panel-primary">
+    <h3 align="center">{{title}}</h3>
+    <div class="panel-body">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-12">
 
-  <div class="row">
-    <div class="col-xs-1">
-      <button type="button" class="btnPB" ng-click="setPB(-20)">-20</button>
-    </div>
-    <div class="col-xs-1">
-      <button type="button" class="btnPB" ng-click="setPB(-10)">-10</button>
-    </div>
-    <div class="col-xs-1">
+            <BR/>
+            <span ng-repeat="progressBar in progressBars">
+            <div class="progress" ng-show="progressBar.show" ng->
 
-      <button type="button" class="btnPB" ng-click="setPB(-10)">-10</button>
-    </div>
-    <div class="col-xs-1">
-      <button type="button" class="btnPB" ng-click="setPB(-10)">-10</button>
+              <div id="divProg{{progressBar.id}}" class="progress-bar progress-bar-striped progress-bar-info progress-bar-animated"
+                   role="progressbar"
+                   aria-valuenow="{{progressBar.value}}" aria-valuemin="0" aria-valuemax="100"
+                   style="width:{{progressBar['uIValueInPercentage']}}%">
+
+                <span class="sr-only">{{progressBar['uIValueInPercentage']}}</span>
+
+              </div>
+
+              </div>
+            </span>
+
+            <BR/>
+          </div>
+        </div>
+        <div class="row">
+
+
+          <div class="col-xs-6 col-centered" align="right">
+            <div class="btn-group dropup">
+              <form class="form" name="form" novalidate>
+
+                <select ng-model="selectedProgressBar"  >
+                  <option
+                    ng-selected="pb.selected"
+                    ng-repeat="pb in progressBarsThatShow track by $index" value="{{pb.id}}"
+                          data-title="pb.id">#progress{{pb.id}}</option>
+                </select>
+              </form>
+
+            </div>
+          </div>
+          <div class="col-xs-6 col-centered" >
+            <span ng-repeat="button in buttons">
+            <button ng-show="button['show']" type="button" class="btnPB"
+                    ng-click="updateProgressBar(selectedProgressBar, button['id']-1)">{{button['sign']}}{{button['value']}}</button>
+            </span>
+        </div>
+        </div>
+      </div>
     </div>
   </div>
-</div>
-</div>
-</div>
 </div>

@@ -3,17 +3,17 @@ function ExampleDirective() {
   return {
     restrict: 'EA',
     templateUrl: 'directives/example.html',
-    scope: {
-      title: '@',
-      message: '@clickMessage'
-    },
-    link: (scope, element) => {
-      element.on('click', () => {
-        scope.setPB = function(btn){
-          alert('you clicked the button!'+btn);
-        };
-      });
+    link: (scope) => {
+      scope.updateProgressBar = function (pbar, btnIndexNo) {
+        const value = scope.buttons[btnIndexNo].getValue();
+
+        const progressBar = scope.progressBars[scope.selectedProgressBar-1];
+
+        progressBar.incrementOrDecrementBy(value);
+        scope.resetAllAndAnimateOnlyAt(scope.selectedProgressBar);
+      };
     }
+
   };
 }
 
