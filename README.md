@@ -183,3 +183,4 @@ An example test is provided for the following types of AngularJS modules:
 - `unit/constants_spec.js`
 
 All unit tests are run with `npm run unit`. When running unit tests, code coverage is simultaneously calculated and output as an HTML file to the `/coverage` directory.
+
